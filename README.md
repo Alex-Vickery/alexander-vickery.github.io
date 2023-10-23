@@ -1,4 +1,4 @@
-# Source code &amp; Assets for My Personal Webpage
+# Source code &amp; Assets for alexander-vickery.com
 
 This repository contains the source code and assets of [my personal webpage](alexander-vickery.com)
 
