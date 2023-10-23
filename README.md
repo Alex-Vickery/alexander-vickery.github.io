@@ -18,7 +18,7 @@ The icon toolkit comes from [font awesome](https://fontawesome.com/v4/get-starte
 
 The font used is ```montserrat``` available from [google fonts](https://developers.google.com/fonts)
 
-The overall design for the website was inspired by [Pascal Michaillat](https://pascalmichaillat.org/)
+The overall design for the website was inspired by the minimal website design created by [Pascal Michaillat](https://pascalmichaillat.org/)
 
 # Assets 
 
