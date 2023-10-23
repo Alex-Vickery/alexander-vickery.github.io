@@ -285,6 +285,7 @@ a.paper-link:visited {
 
 .p-links li a {
   text-decoration: none;
+  color: inherit;
 }
 
 .p-links li a:hover {
