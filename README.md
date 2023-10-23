@@ -10,7 +10,7 @@ git clone https://github.com/Alex-Vickery/alexander-vickery.github.io.git
 
 # Source code
 
-The website is written in ```html```, ```css``` &amp; vanilla ```javascript```. 
+The website is written in ```html```, ```css``` &amp; ```javascript```. 
 
 The bundler used for this project is ```vite``` - [link here](https://v2.vitejs.dev/) and the site is hosted on ```vercel``` - [link here](https://vercel.com/about)
 
