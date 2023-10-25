@@ -1,6 +1,6 @@
 # Source code &amp; Assets for alexander-vickery.com
 
-This repository contains the source code and assets of [my personal webpage](alexander-vickery.com)
+This repository contains the source code and assets of [my personal webpage](www.alexander-vickery.com)
 
 If you would like to use this website template, you can clone the repository to your local machine by:
 
