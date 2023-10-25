@@ -25,5 +25,5 @@ The overall design for the website was inspired by the minimal website design cr
 The website's assets include [research content](https://www.alexander-vickery.com/papers) &amp; [teaching content](https://www.alexander-vickery.com/teaching). You can find these assets in the ```public``` folder and they can be downloaded from there 
 
 # License 
-The website was created by Alexander Vickery and is licensed under the [Creative Commons Zero v1.0 Universal](https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/publicdomain/zero/1.0/deed.en)https://creativecommons.org/publicdomain/zero/1.0/deed.en)
+The website was created by Alexander Vickery and is licensed under the [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 
