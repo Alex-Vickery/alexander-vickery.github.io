@@ -1,1 +1,756 @@
+@import "@fortawesome/fontawesome-free/css/all.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-text-black: #333332;
+  --color-background: #ffffff;
+  --color-green-light: #adc2a9;
+  --color-green-dark: #99a799;
+  --color-brown: #b3a492;
+  --color-code: #f1efef;
+}
+html,
+body {
+  font-family: "Montserrat";
+  color: var(--color-text-blacktext-black);
+}
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--color-background);
+}
+.home-logo-img {
+  width: 100px;
+  padding-top: 20px;
+}
+
+nav {
+  display: flex;
+  width: 50%;
+  padding: 5% 0;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 2;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 30px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: var(--color-text-black);
+  text-decoration: none;
+  font-size: 20px;
+}
+.nav-links ul:hover li:hover a:hover {
+  color: var(--color-green-light);
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: var(--color-green-dark);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+a.home-logo:visited {
+  color: var(--color-green-dark);
+}
+i {
+  font-size: 50px;
+}
+i:hover {
+  color: var(--color-green-light);
+}
+
+/* Home page content */
+
+.text-box {
+  width: 50%;
+  color: var(--color-text-black);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text-box h1 {
+  font-size: 30px;
+  text-align: left;
+}
+.text-box h3 {
+  font-size: 20px;
+  text-align: left;
+}
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 20px;
+  text-align: left;
+}
+.home-image-box {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding-bottom: 50px;
+}
+.home-image {
+  position: relative;
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 20%;
+}
+a.rhul-link {
+  text-decoration: none;
+  color: var(--color-green-dark);
+}
+a.rhul-link:visited {
+  color: var(--color-green-dark);
+}
+a.rhul-link:hover {
+  color: var(--color-green-light);
+}
+
+/* nav bar icons */
+nav .fa-regular,
+nav .fa-solid {
+  display: none;
+}
+
+/* footer */
+.footer {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.icons i {
+  color: var(--color-green-dark);
+  margin: 0 20px;
+  padding: 15px 0;
+  font-size: 35px;
+}
+.icons i:hover {
+  color: var(--color-green-light);
+}
+.footer p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+/* papers section */
+.header-papers {
+  width: 100%;
+  min-height: 15vh;
+  background-color: var(--color-background);
+}
+
+.papers-text {
+  width: 50%;
+  margin: auto;
+}
+.paper-box {
+  padding: 40px 0;
+}
+a.paper-link {
+  text-decoration: none;
+  color: var(--color-text-black);
+}
+a.paper-link:visited {
+  color: var(--color-text-black);
+}
+.paper-entry {
+  width: 100%;
+  height: auto;
+  align-items: center;
+  border: solid 2px;
+  border-color: var(--color-text-black);
+  border-radius: 10px;
+}
+.paper-entry:hover {
+  border-color: var(--color-green-light);
+}
+.paper-figure {
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  padding-top: 30px;
+}
+.paper-title {
+  padding-top: 30px;
+  width: 90%;
+  margin: auto;
+}
+.paper-title h3 {
+  text-align: left;
+  font-weight: 600;
+}
+.paper-info {
+  width: 85%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.paper-info p {
+  text-align: left;
+  font-weight: 300;
+}
+.paper-data {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 30px;
+}
+.paper-data h4 {
+  text-align: left;
+  font-weight: 500;
+}
+
+.papers-footer {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* Specific paper pages */
+
+.p-title {
+  width: 60%;
+  margin: auto;
+}
+
+.p-title h1 {
+  text-align: left;
+  padding-bottom: 15px;
+}
+
+.p-title p {
+  text-align: left;
+  padding-bottom: 30px;
+  border-bottom: 2px solid;
+  border-color: var(--color-green-dark);
+}
+.p-title a {
+  text-decoration: none;
+  color: inherit;
+}
+.p-title a:hover {
+  color: var(--color-green-light);
+}
+
+.p-links {
+  width: 60%;
+  margin: auto;
+  padding-bottom: 30px;
+  border-bottom: 2px solid;
+  border-color: var(--color-green-dark);
+}
+.p-links h4 {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  font-weight: 500;
+}
+
+.p-links ul {
+  list-style-type: none; /* Remove default list bullets */
+  margin: 0 20px;
+  padding: 0;
+  display: flex; /* Display the list items as a flex container */
+}
+
+.p-links li {
+  margin-right: 40px; /* Adjust the spacing between list items as needed */
+}
+
+.p-links li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.p-links li a:hover {
+  color: var(--color-green-light);
+}
+
+.p-links a:visited {
+  color: var(--color-text-black);
+}
+
+.p-abstract {
+  width: 60%;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid;
+  border-color: var(--color-green-dark);
+}
+.p-abstract h4 {
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+.p-abstract p {
+  font-weight: 400;
+}
+
+.p-figure {
+  width: 60%;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid;
+  border-color: var(--color-green-dark);
+}
+
+.p-figure h4 {
+  font-weight: 500;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.p-figure-box {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+/* specific figures */
+.ord-rank-fig {
+  position: relative;
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+}
+
+.mar-choices-fig {
+  position: relative;
+  width: 650px;
+  max-width: 100%;
+  height: auto;
+}
+.csat-fig {
+  position: relative;
+  width: 650px;
+  max-width: 100%;
+  height: auto;
+}
+
+.intmar-fig {
+  position: relative;
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+}
+.lgb-fig {
+  position: relative;
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+}
+.ipv-fig {
+  position: relative;
+  width: 650px;
+  max-width: 100%;
+  height: auto;
+}
+
+.fam-econ-fig {
+  position: relative;
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+}
+
+.p-citation {
+  width: 60%;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid;
+  border-color: var(--color-green-dark);
+}
+.p-citation h4 {
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+.p-citation p {
+  font-weight: 400;
+}
+.p-citation-block {
+  max-width: 100%;
+  overflow-x: auto;
+  display: block;
+  position: relative;
+  background-color: var(--color-code);
+  padding: 15px 15px;
+  border-radius: 10px;
+}
+
+.citation-code {
+  font-family: monospace;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.citation-element {
+  display: block;
+  color: var(--color-text-black); /* Change the color to your preference */
+}
+
+.citation-key {
+  color: var(--color-green-dark);
+  font-weight: bold;
+}
+.citation-det {
+  color: var(--color-brown);
+}
+
+/* contact page */
+
+.contact-body {
+  width: 40%;
+  margin: auto;
+}
+
+.contact-title {
+  width: 100%;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid;
+  border-color: var(--color-green-dark);
+}
+.contact-title h1 {
+  font-weight: 500;
+}
+
+.location {
+  width: 100%;
+  display: block;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid;
+  border-color: var(--color-green-dark);
+  text-align: center;
+}
+
+.contact-details {
+  width: 100%;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.c-links {
+  width: 100%;
+  margin: auto;
+  padding-bottom: 30px;
+  border-bottom: 2px solid;
+  border-color: var(--color-green-dark);
+}
+
+.c-links ul {
+  list-style-type: none; /* Remove default list bullets */
+  margin: 0 20px;
+  padding: 0;
+  display: flex; /* Display the list items as a flex container */
+  text-align: center;
+  justify-content: center;
+}
+
+.c-links li {
+  margin-right: 40px; /* Adjust the spacing between list items as needed */
+}
+
+.c-links li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.c-links li a:hover {
+  color: var(--color-green-light);
+}
+
+.c-links a:visited {
+  color: var(--color-text-black);
+}
+.c-links i {
+  color: var(--color-green-dark);
+  margin: 0 20px;
+  padding: 15px 0;
+  font-size: 35px;
+}
+.c-links i:hover {
+  color: var(--color-green-light);
+}
+
+/* media queries */
+@media (max-width: 767px) {
+  .header {
+    position: fixed;
+  }
+  .home-logo-img {
+    width: 60px;
+    padding-left: 20px;
+  }
+  nav {
+    width: 100%;
+  }
+  .nav-links {
+    position: absolute;
+    background: var(--color-green-light);
+    height: 100dvh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  .nav-links ul li {
+    display: block;
+    padding: 30px;
+  }
+  .text-box {
+    width: 75%;
+    z-index: 1;
+  }
+  .text-box h1 {
+    font-size: 20px;
+  }
+  .text-box p {
+    font-size: 15px;
+  }
+  .home-image {
+    width: 200px;
+    height: auto;
+  }
+
+  .icons i {
+    font-size: 25px;
+    margin: 0 10px;
+    padding: 5px 0;
+  }
+  .footer p {
+    font-size: 10px;
+  }
+
+  nav .fa-regular,
+  nav .fa-solid {
+    display: block;
+    color: var(--color-text-black);
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    padding-right: 20px;
+  }
+
+  .header-papers {
+    min-height: 5vh;
+  }
+  .papers-text {
+    width: 80%;
+  }
+  .paper-title h3 {
+    font-size: 13px;
+  }
+  .paper-info p {
+    font-size: 13px;
+  }
+  .paper-data h4 {
+    font-size: 11px;
+  }
+  .paper-box {
+    padding: 25px 0;
+  }
+
+  .papers-footer p {
+    font-size: 11px;
+  }
+
+  .p-title,
+  .p-links,
+  .p-abstract,
+  .p-figure,
+  .p-citation {
+    width: 80%;
+  }
+
+  .p-title h1 {
+    font-size: 18px;
+  }
+  .p-title p {
+    font-size: 14px;
+  }
+  .p-links h4 {
+    font-size: 14px;
+  }
+  .p-links a {
+    font-size: 14px;
+  }
+  .p-abstract h4 {
+    font-size: 14px;
+  }
+  .p-abstract p {
+    font-size: 14px;
+  }
+  .p-figure h4 {
+    font-size: 14px;
+  }
+  .p-citation h4 {
+    font-size: 14px;
+  }
+  .citation-code {
+    font-size: 14px;
+  }
+  .contact-body {
+    width: 80%;
+  }
+  .c-links li {
+    margin-right: 20px; /* Adjust the spacing between list items as needed */
+  }
+  .c-links li a {
+    font-size: 15px;
+  }
+  .c-links i {
+    font-size: 25px;
+  }
+}
+
+/* landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1280px) and (orientation: landscape) {
+  .header {
+    position: fixed;
+  }
+  .home-logo-img {
+    width: 60px;
+  }
+  .nav-links ul li a {
+    font-size: 20px;
+  }
+  .text-box h1 {
+    font-size: 20px;
+  }
+  .text-box p {
+    font-size: 15px;
+  }
+  .home-image {
+    width: 200px;
+    height: auto;
+  }
+
+  .header-papers {
+    min-height: 10vh;
+  }
+  .papers-text {
+    width: 60%;
+  }
+  .paper-title h3 {
+    font-size: 14px;
+  }
+  .paper-info p {
+    font-size: 14px;
+  }
+  .paper-data h4 {
+    font-size: 12px;
+  }
+  .paper-box {
+    padding: 25px 0;
+  }
+
+  .papers-footer p {
+    font-size: 12px;
+  }
+  .p-title,
+  .p-links,
+  .p-abstract,
+  .p-figure,
+  .p-citation {
+    width: 80%;
+  }
+  .contact-body {
+    width: 70%;
+  }
+}
+
+/* portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1280px) and (orientation: portrait) {
+  .header {
+    position: fixed;
+  }
+  nav {
+    width: 70%;
+  }
+  .home-logo-img {
+    width: 60px;
+  }
+  .nav-links ul li a {
+    font-size: 20px;
+  }
+  .text-box {
+    width: 70%;
+  }
+  .text-box h1 {
+    font-size: 20px;
+  }
+  .text-box p {
+    font-size: 15px;
+  }
+  .home-image {
+    width: 300px;
+    height: auto;
+  }
+
+  .header-papers {
+    min-height: 8vh;
+  }
+  .papers-text {
+    width: 60%;
+  }
+  .paper-title h3 {
+    font-size: 14px;
+  }
+  .paper-info p {
+    font-size: 14px;
+  }
+  .paper-data h4 {
+    font-size: 12px;
+  }
+  .paper-box {
+    padding: 25px 0;
+  }
+
+  .papers-footer p {
+    font-size: 12px;
+  }
+  .p-title,
+  .p-links,
+  .p-abstract,
+  .p-figure,
+  .p-citation {
+    width: 90%;
+  }
+  .contact-body {
+    width: 80%;
+  }
+}
