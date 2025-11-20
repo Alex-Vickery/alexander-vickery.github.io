@@ -333,6 +333,54 @@ a.paper-link:visited {
   text-align: center;
 }
 
+
+/* specific figures */
+.ord-rank-fig {
+  position: relative;
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+}
+
+.mar-choices-fig {
+  position: relative;
+  width: 650px;
+  max-width: 100%;
+  height: auto;
+}
+.csat-fig {
+  position: relative;
+  width: 650px;
+  max-width: 100%;
+  height: auto;
+}
+
+.intmar-fig {
+  position: relative;
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+}
+.lgb-fig {
+  position: relative;
+  width: 650px;
+  max-width: 100%;
+  height: auto;
+}
+.ipv-fig {
+  position: relative;
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+}
+
+.fam-econ-fig {
+  position: relative;
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+}
+
 .p-figure-box {
   width: 100%;
   align-items: center;
