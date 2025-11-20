@@ -642,7 +642,9 @@ a.paper-link:visited {
 /* landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1280px) and (orientation: landscape) {
   .header {
-    position: fixed;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
   }
   .home-logo-img {
     width: 60px;
