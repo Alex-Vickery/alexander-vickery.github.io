@@ -657,6 +657,7 @@ a.paper-link:visited {
     font-size: 15px;
   }
   .home-image {
+    padding-top:150px;
     width: 200px;
     height: auto;
   }
