@@ -111,7 +111,7 @@ i:hover {
   width: 100%;
   height: auto;
   padding-bottom: 50px;
-  padding-top:100px;
+  padding-top:50px;
 }
 .home-image {
   position: relative;
@@ -543,6 +543,7 @@ a.paper-link:visited {
     font-size: 15px;
   }
   .home-image {
+    padding-top:150px;
     width: 200px;
     height: auto;
   }
