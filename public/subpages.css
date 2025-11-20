@@ -197,11 +197,6 @@ a.paper-link:visited {
   text-align: center;
   padding-top: 30px;
 }
-.paper-figure img {
-  width=33%;
-  display: block;
-  margin: 0 auto;
-}
 .paper-title {
   padding-top: 30px;
   width: 90%;
