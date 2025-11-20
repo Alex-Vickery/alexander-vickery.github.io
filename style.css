@@ -342,6 +342,13 @@ a.paper-link:visited {
   height: auto;
 }
 
+.ada-fig {
+  position: relative;
+  width: 650px;
+  max-width: 100%;
+  height: auto;
+}
+
 .mar-choices-fig {
   position: relative;
   width: 650px;
@@ -357,19 +364,19 @@ a.paper-link:visited {
 
 .intmar-fig {
   position: relative;
-  width: 500px;
+  width: 600px;
   max-width: 100%;
   height: auto;
 }
 .lgb-fig {
   position: relative;
-  width: 500px;
+  width: 750px;
   max-width: 100%;
   height: auto;
 }
 .ipv-fig {
   position: relative;
-  width: 650px;
+  width: 500px;
   max-width: 100%;
   height: auto;
 }
