@@ -342,6 +342,13 @@ a.paper-link:visited {
   height: auto;
 }
 
+.ada-fig {
+  position: relative;
+  width: 650px;
+  max-width: 100%;
+  height: auto;
+}
+
 .mar-choices-fig {
   position: relative;
   width: 650px;
@@ -363,7 +370,7 @@ a.paper-link:visited {
 }
 .lgb-fig {
   position: relative;
-  width: 650px;
+  width: 750px;
   max-width: 100%;
   height: auto;
 }
