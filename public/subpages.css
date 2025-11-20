@@ -236,6 +236,7 @@ a.paper-link:visited {
 /* Specific paper pages */
 
 .p-title {
+  padding-top:25px;
   width: 60%;
   margin: auto;
 }
