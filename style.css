@@ -508,7 +508,9 @@ a.paper-link:visited {
 /* media queries */
 @media (max-width: 767px) {
   .header {
-    position: fixed;
+    position: sticky;
+    top:0;
+    zindex: 1000;
   }
   .home-logo-img {
     width: 60px;
@@ -701,7 +703,9 @@ a.paper-link:visited {
 /* portrait */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1280px) and (orientation: portrait) {
   .header {
-    position: fixed;
+    position: sticky;
+    top:0;
+    zindex: 1000;
   }
   nav {
     width: 70%;
