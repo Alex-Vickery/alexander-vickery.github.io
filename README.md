@@ -1,20 +1,82 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+#  My Personl Portfolio Website
 
-# Run and deploy your AI Studio app
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 
-This contains everything you need to run your app locally.
+This repository contains the source code for my personal portfolio website, currently live at [www.alexander-vickery.com](https://www.alexander-vickery.com)].
 
-View your app in AI Studio: https://ai.studio/apps/drive/16K9LThYjAcfaOGZkl4LfYDONNeNfYLcS
+The site showcases my academic publications and was built with simplicity in mind, using modern web development tools.
 
-## Run Locally
+## Stack
 
-**Prerequisites:**  Node.js
+* **Framework/Tooling:** [Vite](https://vitejs.dev/) for development and building.
+* **Language:** [TypeScript](https://www.typescriptlang.org/) for code.
+* **Markup:** Semantic HTML5.
+* **Deployment:** Hosted on [Vercel](https://vercel.com).
+* **Styling:** Tailwind CSS.
 
+## Getting Started
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+If you want to run this project locally on your machine, follow these steps:
+
+### Prerequisites
+
+Make sure you have [Node.js](https://nodejs.org/) installed on your computer.
+
+### Installation
+
+1.  **Clone the repository**
+    ```bash
+    git clone [https://github.com/](https://github.com/)[Alex-Vickery]/[alexander-vickery.github.io].git
+    cd [repo-name]
+    ```
+
+2.  **Install dependencies**
+    ```bash
+    npm install
+    # or if you use yarn
+    yarn
+    ```
+
+3.  **Run the development server**
+    ```bash
+    npm run dev
+    ```
+    Open http://localhost:5173 (or the port shown in your terminal) to view it in the browser.
+
+4.  **Build for production**
+    ```bash
+    npm run build
+    ```
+
+## Using this Template
+
+If you would like to use this code as a starting point for your own portfolio, you are welcome to do so! 
+
+**Please follow these steps to make it your own:**
+
+1.  **Fork** or **Clone** the repo.
+2.  **Update Content:** Please replace all personal information, project descriptions, resume data, and images with your own.
+
+## License
+
+This work is licensed under a **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License**.
+
+You are free to:
+* **Share** — copy and redistribute the material in any medium or format.
+* **Adapt** — remix, transform, and build upon the material.
+
+**Under the following terms:**
+* **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made.
+* **NonCommercial** — You may not use the material for commercial purposes.
+* **ShareAlike** — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
+
+To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+
+---
+
+Alexander Vickery 
+
+<img src="public/assets/home/logo.png" width="125px">
