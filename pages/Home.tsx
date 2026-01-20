@@ -57,7 +57,7 @@ const Home: React.FC = () => {
                   </Link>
 
                   <a
-                    href="./assets/home/CV.pdf"
+                    href="/assets/home/CV.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group w-full sm:w-auto text-center inline-flex items-center justify-center px-8 py-4 bg-white text-gray-900 font-bold rounded-2xl border border-gray-200 hover:border-gray-900 transition-all hover:shadow-lg hover:-translate-y-1 active:translate-y-0"
@@ -87,7 +87,7 @@ const Home: React.FC = () => {
                 */}
                 <div className="h-full p-4">
                   <img
-                    src="./assets/home/AV_45_comp.jpg"
+                    src="/assets/home/AV_45_comp.jpg"
                     alt="Alexander Vickery"
                     loading="eager"
                     /* 1. Changed 'w-full' to 'w-auto' (calculates width based on height)
