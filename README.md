@@ -56,7 +56,7 @@ If you would like to use this code as a starting point for your own portfolio, y
 **Please follow these steps to make it your own:**
 
 1.  **Fork** or **Clone** the repo.
-2.  **Update Content:** Please replace all personal information, project descriptions, resume data, and images with your own.
+2.  **Update Content:** Please replace all personal information, project descriptions, and images with your own.
 
 ## License
 
