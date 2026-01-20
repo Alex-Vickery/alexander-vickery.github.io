@@ -1,0 +1,171 @@
+import { Publication, PublicationStatus } from "../types";
+
+export const publications: Publication[] = [
+  {
+    id: "speeding-up-deferred-acceptance",
+    title: "Speeding Up Deferred Acceptance",
+    subtitle: "",
+    authors: [
+      "Gregory Gutin",
+      "Daniel Karapetyan",
+      "Phillip R Neary",
+      "Alexander Vickery",
+      "Anders Yeo",
+    ],
+    status: PublicationStatus.PUBLISHED,
+    journal: "(Forthcoming) Journal of Mechanism and Institution Design",
+    year: "2026",
+    abstract:
+      "A run of the deferred acceptance (DA) algorithm may contain proposals that are sure to be rejected. In this paper we introduce the accelerated deferred acceptance algorithm that proceeds in a similar manner to DA but with sure-to-be rejected proposals ruled out. Accelerated deferred acceptance outputs the same stable matching as DA but does so more efficiently: it terminates in weakly fewer rounds, requires weakly fewer proposals, and stable pairs match no later. Computational experiments show that the efficiency savings can be strict.",
+    bibtex: `@article{gutin2024speedingdeferredacceptance,
+  title={Speeding Up Deferred Acceptance},
+  author={Gutin, Gregory and Karapetyan, Daniel and Neary, Phillip R. and Vickery, Alexander and Yeo, Anders},
+  archivePrefix={arXiv},
+  eprint = {2409.06865},
+  primaryClass = {econ.TH},
+  year={2024},
+  doi={https://doi.org/10.48550/arXiv.2409.06865},
+}`,
+    paperUrl: "https://www.mechanism-design.org/",
+    workingPaperUrl: "assets/publications/ADAv3.pdf",
+    codeUrl: "https://rdmc.nottingham.ac.uk/handle/internal/11470",
+    imageUrl: "https://picsum.photos/seed/tax/800/450",
+  },
+  {
+    id: "divorce-parental-conflicts",
+    title: "Divorce, Parental Conflicts and Child Skills: A Story of Selection",
+    subtitle: "",
+    authors: ["Gloria Moroni", "Alexander Vickery"],
+    status: PublicationStatus.PUBLISHED,
+    journal: "Labour Economics",
+    year: "2025",
+    abstract:
+      "This paper uses data from the UK Millennium Cohort Study (MCS) to study how parental divorce in early childhood affects a child's skill development. We estimate a dynamic model of child skill formation that accounts for the endogenous nature of parental divorce including a measure of interparental conflicts. Our results show that the skill disadvantages among children of divorce stem almost entirely from the effects of selection. Here, skill gaps materialise due to disadvantages in household characteristics that also increase divorce risk. Inter-parental conflicts, parental education, and family financial resources emerge as key pre-divorce characteristics that explain divorce gaps in children’s cognitive and socio-emotional skills from age 3, through age 11. Inter-parental conflicts are often unobserved and overlooked in the literature, but our results demonstrate that they indeed play a major role, particularly for gaps in socio-emotional skills. Moreover, such gaps are found to be more pronounced among more vulnerable children, i.e. those with lower levels of socio-emotional skills.",
+    bibtex: `@article{MORONI2025102830,
+  title={Divorce, Parental Conflicts and Child Skills: A Story of Selection},
+  author={Moroni, Gloria and Vickery, Alexander},
+  journal={Labour Economics},
+  volume={97},
+  pages={102830},
+  issn={0927-5371},
+  year={2025},
+  doi={https://doi.org/10.1016/j.labeco.2025.102830},
+}`,
+    paperUrl: "https://doi.org/10.1016/j.labeco.2025.102830",
+    workingPaperUrl: "assets/publications/divorce_conflicts.pdf",
+    codeUrl:
+      "https://github.com/Alex-Vickery/Divorce-parental-conflicts-and-child-skills-A-story-of-selection",
+    imageUrl: "https://picsum.photos/seed/tax/800/450",
+  },
+  {
+    id: "the-role-of-own-group-density",
+    title:
+      "The Role of Own-Group Density & Local Social Norms for Ethnic Marital Sorting: Evidence from the UK",
+    subtitle: "",
+    authors: ["Dan Anderberg", "Alexander Vickery"],
+    status: PublicationStatus.PUBLISHED,
+    journal: "European Economic Review",
+    year: "2021",
+    abstract:
+      "We exploit the post-war immigration-induced regional variation in ethnic composition among British-born individuals to study inter-ethnic marriages in the UK. Black and Asian individuals are more likely to marry intra-ethnically in regions where the own ethnicity share is relatively large. In order to disentangle the relative roles played by supply effects, preferences and local social norms we estimate a structural marriage market model that allows for conformity behaviour. Using the estimated model, we make predictions for a set of more recent cohorts whose marital choices are still to be completed.",
+    bibtex: `@article{ANDERBERG2021103774,
+  title={The Role of Own-Group Density & Local Social Norms for Ethnic Marital Sorting: Evidence from the UK},
+  author={Anderberg, Dan and Vickery, Alexander},
+  journal={European Economic Review},
+  volume={138},
+  pages={103774},
+  issn={0014-2921},
+  year={2021},
+  doi={https://doi.org/10.1016/j.euroecorev.2021.103774},
+}`,
+    paperUrl: "https://doi.org/10.1016/j.euroecorev.2021.103774",
+    workingPaperUrl: "assets/publications/own_group_density.pdf",
+    codeUrl:
+      "https://github.com/Alex-Vickery/The-role-of-own-group-density-local-social-norms-for-ethnic-marital-sorting-Evidence-from-the-UK",
+    imageUrl: "https://picsum.photos/seed/tax/800/450",
+  },
+  {
+    id: "ipv-childrens-human-capital",
+    title: "Intimate Partner Violence & Children's Human Capital",
+    authors: ["Dan Anderberg", "Gloria Moroni", "Alexander Vickery"],
+    status: PublicationStatus.WORKING_PAPER,
+    journal: "IFS Working Paper, CESifo Working Paper",
+    year: "2025",
+    abstract:
+      "We use a dynamic latent factor model to study how exposure to intimate partner violence (IPV) affects young children’s accumulation of cognitive and socio-emotional skills. The model allows for both a direct effect of exposure as well as indirect effects via changes in parental investments and mother's mental health. IPV has adverse effects on both skills, with more immediate and larger effects for socio-emotional skills and with the skill deficits growing in exposure duration. The indirect effects dominate for both skills. Early interventions that support parental investment and mother's mental health have potential for offsetting the adverse IPV-effects but only if subsequent IPV exposure is eliminated.",
+    bibtex: `@techreport{Anderberg2025IPV,
+  title={Intimate Partner Violence & Children's Human Capital},
+  author={Anderberg, Dan and Moroni, Gloria and Vickery, Alexander},
+  year={2025},
+  institution={Institute for Fiscal Studies},
+  type={Working Paper}
+}`,
+    workingPaperUrl:
+      "https://ifs.org.uk/publications/intimate-partner-violence-and-childrens-human-capital",
+    codeUrl:
+      "https://github.com/Alex-Vickery/intimate-partner-violence-and-childrens-human-capital",
+    imageUrl: "https://picsum.photos/seed/labor/800/450",
+  },
+  {
+    id: "gay-varsity",
+    title:
+      "Gay Varsity: Subject Choices, Grades, and Early Careers for UK LGB University Students",
+    authors: ["Jefferson Frank", "Alexander Vickery"],
+    status: PublicationStatus.WORKING_PAPER,
+    journal: "Revise & Resubmit at Labour Economics",
+    year: "2025",
+    abstract:
+      "Using data on UK students attending university from 2012 – 2020, we look at how LGB students differ from their heterosexual counterparts. LGB men and women both have large shifts towards Humanities subjects, and away from LEM (law, economics, management) and STEM. Gay and bisexual men do well in degree outcomes in the Humanities, and about the same as heterosexual men in other subjects. Lesbian and bisexual women do about the same as heterosexual women in the Humanities and poorly in other subjects. Male and female LGB students suffer in salaries in their early career.",
+    bibtex: `@techreport{frank2025gayvarsity,
+  title={Gay Varsity: Subject Choices, Grades, and Early Careers for UK LGB University Students},
+  author={Frank, Jefferson and Vickery, Alexander},
+  year={2025},
+  type={Working Paper}
+}`,
+    workingPaperUrl: "assets/publications/Gay Varsity June 25.pdf",
+    codeUrl:
+      "https://github.com/Alex-Vickery/Gay-Varsity-Subject-Choices-Grades-and-Early-Careers-for-UK-LGB-University-Students",
+    imageUrl: "https://picsum.photos/seed/labor/800/450",
+  },
+  {
+    id: "looking-up-the-ladder",
+    title:
+      "Looking Up the Ladder: The Gender of Top Peers and Student Outcomes",
+    subtitle: "",
+    authors: [
+      "Youjin Hahn",
+      "Gloria Moroni",
+      "Valentina Tonei",
+      "Alexander Vickery",
+    ],
+    status: PublicationStatus.WORK_IN_PROGRESS,
+    year: "2025",
+    abstract:
+      "We exploit a unique educational setting in South Korea to identify the relationship between the gender composition of the set of students that are outperforming a given student - defined as 'the gender composition of the ordinal ranking' - and the development of adolescent gender role attitudes. In this unique setting, students were randomly assigned to schools within their district, and to classes within their school. In addition, students were randomly assigned to single-sex schools or mixed-sex schools within their district. Using classroom level data, containing the complete gender composition and ordinal rankings within the class, we estimate a simple model of the development of gender role attitudes. We identify the model because ordinal rankings and the gender composition are exogenous, conditional on district fixed effects, due to randomisation introduced by the random assignment policy.",
+    bibtex: `@misc{hahn2025looking,
+  title={Looking Up the Ladder: The Gender of Top Peers and Student Outcomes},
+  author={Hahn, Youjin and Moroni, Gloria and Tonei, Valentina and Vickery, Alexander},
+  year={2025},
+  note={Work in Progress}
+}`,
+    imageUrl: "https://picsum.photos/seed/macro/800/450",
+  },
+  {
+    id: "reaching-for-the-sky",
+    title:
+      "Reaching for the SKY: Parental Investments in Academic Skills and Competition for University Places",
+    subtitle: "",
+    authors: ["Alexander Vickery"],
+    status: PublicationStatus.WORK_IN_PROGRESS,
+    year: "2024",
+    abstract:
+      "I study the development of child academic skills through adolescence in anticipation of entry to university in the context of South Korea. I look at how heterogeneity in initial household income and child skills affects parents' decisions to invest in private education for their child, and how the resulting choices contribute to inequality in university admissions in the first instance, and also to lower social mobility in terms of lifetime earnings. I use a non-linear factor approach to estimate human capital production functions that are placed within an equilibrium framework to account for the fact that places at top universities are highly attractive but also limited. I find that there are strong complementarities between different academic skills and that private education in one subject can have strong spillover effects on the accumulation of skills in cognate subjects. The implied equilibrium competition for limited places at top universities contributes to low inter-generational social mobility, and, conversely, policies that would limit competition could improve equality and the allocation of talent.",
+    bibtex: `@misc{vickery2024,
+  title={Reaching for the SKY: Parental Investments in Academic Skills and Competition for University Places},
+  author={Vickery, Alexander.},
+  year={2024},
+  note={Work in Progress}
+}`,
+    imageUrl: "https://picsum.photos/seed/macro/800/450",
+  },
+];
