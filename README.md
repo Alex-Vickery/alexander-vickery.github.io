@@ -62,7 +62,7 @@ If you would like to use this code as a starting point for your own portfolio, y
 
 ## License
 
-This repository is licensed under an MIT license.
+The content of this repository are licensed under the terms of the MIT License.
 
 ---
 
