@@ -21,7 +21,7 @@ If you want to run this project locally on your machine, follow these steps:
 
 ### Prerequisites
 
-Make sure you have [Node.js](https://nodejs.org/) installed on your computer.
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 
 ### Installation
 
