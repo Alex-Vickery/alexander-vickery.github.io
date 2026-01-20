@@ -10,8 +10,8 @@ This repository contains the source code for my [personal portfolio website](htt
 ## Devlopment Stack
 
 * **Framework/Tooling:** [Vite](https://vitejs.dev/) for development and building.
-* **Language:** [TypeScript](https://www.typescriptlang.org/) for code.
-* **Markup:** Semantic HTML5.
+* **Language:** [TypeScript](https://www.typescriptlang.org/).
+* **Markup:** HTML5.
 * **Deployment:** Hosted on [Vercel](https://vercel.com).
 * **Styling:** Tailwind CSS.
 
@@ -27,7 +27,7 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your computer.
 
 1.  **Clone the repository**
     ```bash
-    git clone [https://github.com/](https://github.com/)[Alex-Vickery]/[alexander-vickery.github.io].git
+    git clone https://github.com/Alex-Vickery/alexander-vickery.github.io.git
     cd [repo-name]
     ```
 
