@@ -5,11 +5,9 @@
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 
-This repository contains the source code for my personal portfolio website, currently live at [www.alexander-vickery.com](https://www.alexander-vickery.com).
+This repository contains the source code for my [personal portfolio website](https://www.alexander-vickery.com).
 
-The site showcases my academic publications and was built with simplicity in mind, using modern web development tools.
-
-## Stack
+## Devlopment Stack
 
 * **Framework/Tooling:** [Vite](https://vitejs.dev/) for development and building.
 * **Language:** [TypeScript](https://www.typescriptlang.org/) for code.
