@@ -27,7 +27,7 @@ export const publications: Publication[] = [
   doi={https://doi.org/10.48550/arXiv.2409.06865},
 }`,
     paperUrl: "https://www.mechanism-design.org/",
-    workingPaperUrl: "assets/publications/ADAv3.pdf",
+    workingPaperUrl: "./assets/publications/ADAv3.pdf",
     codeUrl: "https://rdmc.nottingham.ac.uk/handle/internal/11470",
     imageUrl: "https://picsum.photos/seed/tax/800/450",
   },
@@ -52,7 +52,7 @@ export const publications: Publication[] = [
   doi={https://doi.org/10.1016/j.labeco.2025.102830},
 }`,
     paperUrl: "https://doi.org/10.1016/j.labeco.2025.102830",
-    workingPaperUrl: "assets/publications/divorce_conflicts.pdf",
+    workingPaperUrl: "./assets/publications/divorce_conflicts.pdf",
     codeUrl:
       "https://github.com/Alex-Vickery/Divorce-parental-conflicts-and-child-skills-A-story-of-selection",
     imageUrl: "https://picsum.photos/seed/tax/800/450",
@@ -79,7 +79,7 @@ export const publications: Publication[] = [
   doi={https://doi.org/10.1016/j.euroecorev.2021.103774},
 }`,
     paperUrl: "https://doi.org/10.1016/j.euroecorev.2021.103774",
-    workingPaperUrl: "assets/publications/own_group_density.pdf",
+    workingPaperUrl: "./assets/publications/own_group_density.pdf",
     codeUrl:
       "https://github.com/Alex-Vickery/The-role-of-own-group-density-local-social-norms-for-ethnic-marital-sorting-Evidence-from-the-UK",
     imageUrl: "https://picsum.photos/seed/tax/800/450",
@@ -122,7 +122,7 @@ export const publications: Publication[] = [
   year={2025},
   type={Working Paper}
 }`,
-    workingPaperUrl: "assets/publications/Gay Varsity June 25.pdf",
+    workingPaperUrl: "./assets/publications/Gay Varsity June 25.pdf",
     codeUrl:
       "https://github.com/Alex-Vickery/Gay-Varsity-Subject-Choices-Grades-and-Early-Careers-for-UK-LGB-University-Students",
     imageUrl: "https://picsum.photos/seed/labor/800/450",
