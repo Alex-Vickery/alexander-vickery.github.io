@@ -1,4 +1,4 @@
-#  Alexander-Vickery.github.io
+#  Source code for alexander-vickery.github.io
 
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
