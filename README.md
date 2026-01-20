@@ -9,11 +9,11 @@ This repository contains the source code for my [personal portfolio website](htt
 
 ## Devlopment Stack
 
-* **Framework/Tooling:** [Vite](https://vitejs.dev/) for development and building.
+* **Framework/Tooling:** [Vite](https://vitejs.dev/).
 * **Language:** [TypeScript](https://www.typescriptlang.org/).
-* **Markup:** HTML5.
+* **Markup:** [HTML5](https://www.w3docs.com/learn-html/html5-introduction.html).
 * **Deployment:** Hosted on [Vercel](https://vercel.com).
-* **Styling:** Tailwind CSS.
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/).
 
 ## Getting Started
 
