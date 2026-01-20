@@ -28,7 +28,7 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your computer.
 1.  **Clone the repository**
     ```bash
     git clone https://github.com/Alex-Vickery/alexander-vickery.github.io.git
-    cd [repo-name]
+    cd alexander-vickery.github.io
     ```
 
 2.  **Install dependencies**
