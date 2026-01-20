@@ -9,7 +9,7 @@ This repository contains the source code for alexander-vickery.github.io, my [pe
 
 To produce and deploy the site I used the following development stack:
 
-## Devlopment Stack
+## Stack
 
 * **Framework/Tooling:** [Vite](https://vitejs.dev/).
 * **Language:** [TypeScript](https://www.typescriptlang.org/).
