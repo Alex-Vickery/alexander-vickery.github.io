@@ -62,13 +62,7 @@ If you would like to use this code as a starting point for your own portfolio, y
 
 ## License
 
-This work is licensed under a **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License**.
-
-You are free to:
-* **Share** - copy and redistribute the material in any medium or format.
-* **Adapt** - remix, transform, and build upon the material.
-
-To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+This repository is licensed under an MIT license.
 
 ---
 
