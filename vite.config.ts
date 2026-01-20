@@ -6,8 +6,7 @@ import fs from "fs"; // Used for debugging
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), "");
 
-  // --- VERCEL DEBUGGING BLOCK ---
-  // This will print to your Vercel Build Logs
+  // --- VERCEL DEBUGGING ---
   console.log("\n========== VERCEL FILE SYSTEM CHECK ==========");
   console.log("Current Directory:", process.cwd());
   console.log("Files at Root:", fs.readdirSync(process.cwd()));
@@ -40,11 +39,9 @@ export default defineConfig(({ mode }) => {
     },
     resolve: {
       alias: {
-        // Fix: Use process.cwd() instead of __dirname
         "@": path.resolve(process.cwd(), "."),
       },
     },
-    // Explicitly tell Vite to look for the public dir here
     publicDir: "public",
   };
 });
