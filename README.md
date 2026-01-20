@@ -7,6 +7,8 @@
 
 This repository contains the source code for alexander-vickery.github.io, my [personal portfolio website](https://www.alexander-vickery.com).
 
+To produce and deploy the site I used the following development stack:
+
 ## Devlopment Stack
 
 * **Framework/Tooling:** [Vite](https://vitejs.dev/).
