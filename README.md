@@ -5,7 +5,7 @@
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 
-This repository contains the source code for alexander-vickery.github.io, my [personal portfolio website](https://www.alexander-vickery.com).
+This repository contains the source code for `alexander-vickery.github.io`, my [personal portfolio website](https://www.alexander-vickery.com).
 
 To produce and deploy the site I used the following development stack:
 
