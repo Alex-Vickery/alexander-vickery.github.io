@@ -136,8 +136,7 @@ const PublicationsList: React.FC = () => {
                       <p className="mt-4 text-gray-600 line-clamp-2 text-sm font-medium leading-relaxed">
                         {pub.abstract}
                       </p>
-                      <div className="mt-4 text-sm font-medium text-gray-900 leading-relaxed">
-                        {/* --- UPDATED AUTHOR RENDERING --- */}
+                      <div className="mt-4 text-sm font-bold font-medium text-gray-900 leading-relaxed">
                         <span className="text-gray-900">
                           {formatAuthors(pub.authors)}
                         </span>
