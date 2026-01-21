@@ -242,14 +242,14 @@ export const publications: Publication[] = [
       { name: "Alexander Vickery", url: "https://www.alexander-vickery.com" },
     ],
     status: PublicationStatus.WORK_IN_PROGRESS,
-    year: "2025",
+    year: "2026",
     abstract:
       "We exploit a unique educational setting in South Korea to identify the relationship between the gender composition of the set of students that are outperforming a given student - defined as 'the gender composition of the ordinal ranking' - and the development of adolescent gender role attitudes. In this unique setting, students were randomly assigned to schools within their district, and to classes within their school. In addition, students were randomly assigned to single-sex schools or mixed-sex schools within their district. Using classroom level data, containing the complete gender composition and ordinal rankings within the class, we estimate a simple model of the development of gender role attitudes. We identify the model because ordinal rankings and the gender composition are exogenous, conditional on district fixed effects, due to randomisation introduced by the random assignment policy.",
     jelCodes: ["I21", "J16", "Z13"],
-    bibtex: `@misc{hahn2025looking,
+    bibtex: `@misc{hahn2026looking,
   title={Looking Up the Ladder: The Gender of Top Peers and Student Outcomes},
   author={Hahn, Youjin and Moroni, Gloria and Tonei, Valentina and Vickery, Alexander},
-  year={2025},
+  year={2026},
   note={Work in Progress}
 }`,
     imageUrl: "https://picsum.photos/seed/macro/800/450",
