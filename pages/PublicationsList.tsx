@@ -123,7 +123,7 @@ const PublicationsList: React.FC = () => {
                       <div className="mb-4">
                         <StatusBadge status={pub.status} />
                       </div>
-                      <h2 className="text-2xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
+                      <h2 className="text-2xl text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
                         {pub.title}
                       </h2>
                       {pub.subtitle && (
