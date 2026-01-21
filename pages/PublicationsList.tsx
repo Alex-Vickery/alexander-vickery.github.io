@@ -9,9 +9,7 @@ const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: {
-      staggerChildren: 0.08,
-    },
+    transition: { staggerChildren: 0.08 },
   },
 };
 
@@ -21,11 +19,7 @@ const cardVariants = {
     opacity: 1,
     y: 0,
     scale: 1,
-    transition: {
-      type: "spring",
-      stiffness: 260,
-      damping: 25,
-    },
+    transition: { type: "spring", stiffness: 260, damping: 25 },
   },
   exit: {
     opacity: 0,
@@ -41,6 +35,14 @@ const PublicationsList: React.FC = () => {
     filter === "All"
       ? publications
       : publications.filter((p) => p.status === filter);
+
+  const formatAuthors = (authors: string[]) => {
+    if (authors.length === 0) return "";
+    if (authors.length === 1) return authors[0];
+    return (
+      authors.slice(0, -1).join(", ") + " & " + authors[authors.length - 1]
+    );
+  };
 
   const StatusBadge: React.FC<{ status: PublicationStatus }> = ({ status }) => {
     const colors = {
@@ -123,7 +125,7 @@ const PublicationsList: React.FC = () => {
                       <div className="mb-4">
                         <StatusBadge status={pub.status} />
                       </div>
-                      <h2 className="text-2xl text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
+                      <h2 className="text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
                         {pub.title}
                       </h2>
                       {pub.subtitle && (
@@ -134,10 +136,12 @@ const PublicationsList: React.FC = () => {
                       <p className="mt-4 text-gray-600 line-clamp-2 text-sm font-medium leading-relaxed">
                         {pub.abstract}
                       </p>
-                      <div className="mt-6 text-sm font-medium text-gray-900 leading-relaxed">
+                      <div className="mt-4 text-sm font-medium text-gray-900 leading-relaxed">
+                        {/* --- UPDATED AUTHOR RENDERING --- */}
                         <span className="text-gray-900">
-                          {pub.authors.join(", ")}
+                          {formatAuthors(pub.authors)}
                         </span>
+
                         <span className="mx-2 opacity-50">•</span>
                         <span>{pub.year}</span>
                         {pub.journal && (
