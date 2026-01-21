@@ -131,10 +131,10 @@ const PublicationsList: React.FC = () => {
                           {pub.subtitle}
                         </p>
                       )}
-                      <p className="mt-4 text-gray-600 line-clamp-2 leading-relaxed">
+                      <p className="mt-4 text-gray-600 line-clamp-2 text-sm font-medium leading-relaxed">
                         {pub.abstract}
                       </p>
-                      <div className="mt-6 flex flex-wrap items-center gap-4 font-medium text-gray-600">
+                      <div className="mt-6 flex flex-wrap items-center gap-4 text-sm font-medium text-gray-600">
                         <span className="text-gray-600">
                           {pub.authors.join(", ")}
                         </span>
