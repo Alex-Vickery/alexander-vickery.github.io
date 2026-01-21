@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # Source code for alexander-vickery.github.io
-=======
-#  Source code for alexander-vickery.github.io
->>>>>>> b4c53947f96a7004338d71374aedf4d34a3f65e0
 
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
@@ -15,19 +11,11 @@ To produce and deploy the site I used the following development stack:
 
 ## Stack
 
-<<<<<<< HEAD
 - **Framework/Tooling:** [Vite](https://vitejs.dev/).
 - **Language:** [TypeScript](https://www.typescriptlang.org/).
 - **Markup:** [HTML5](https://www.w3docs.com/learn-html/html5-introduction.html).
 - **Deployment:** [Vercel](https://vercel.com).
 - **Styling:** [Tailwind CSS](https://tailwindcss.com/).
-=======
-* **Framework/Tooling:** [Vite](https://vitejs.dev/).
-* **Language:** [TypeScript](https://www.typescriptlang.org/).
-* **Markup:** [HTML5](https://www.w3docs.com/learn-html/html5-introduction.html).
-* **Deployment:** [Vercel](https://vercel.com).
-* **Styling:** [Tailwind CSS](https://tailwindcss.com/).
->>>>>>> b4c53947f96a7004338d71374aedf4d34a3f65e0
 
 ## Getting Started
 
@@ -39,7 +27,6 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 
 ### Installation
 
-<<<<<<< HEAD
 1. **Clone the repository**
 
    ```bash
@@ -66,7 +53,7 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 4. **Build for production**
 
    ```bash
-   npm run build
+    npm run build
    ```
 
 ## Using this Template
@@ -77,40 +64,6 @@ If you would like to use this code as a starting point for your own portfolio, y
 
 1. **Fork** or **Clone** the repo.
 2. **Update Content:** Please replace all personal information, project descriptions, and images with your own.
-=======
-1.  **Clone the repository**
-    ```bash
-    git clone https://github.com/Alex-Vickery/alexander-vickery.github.io.git
-    cd alexander-vickery.github.io
-    ```
-
-2.  **Install dependencies**
-    ```bash
-    npm install
-    # or if you use yarn
-    yarn
-    ```
-
-3.  **Run the development server**
-    ```bash
-    npm run dev
-    ```
-    Open http://localhost:5173 (or the port shown in your terminal) to view it in the browser.
-
-4.  **Build for production**
-    ```bash
-    npm run build
-    ```
-
-## Using this Template
-
-If you would like to use this code as a starting point for your own portfolio, you are welcome to do so! 
-
-**Please follow these steps to make it your own:**
-
-1.  **Fork** or **Clone** the repo.
-2.  **Update Content:** Please replace all personal information, project descriptions, and images with your own.
->>>>>>> b4c53947f96a7004338d71374aedf4d34a3f65e0
 
 ## License
 
@@ -118,10 +71,6 @@ The content of this repository are licensed under the terms of the MIT License.
 
 ---
 
-<<<<<<< HEAD
 Alexander Vickery
-=======
-Alexander Vickery 
->>>>>>> b4c53947f96a7004338d71374aedf4d34a3f65e0
 
 <img src="public/assets/home/logo.png" width="125px">
