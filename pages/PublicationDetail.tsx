@@ -12,20 +12,46 @@ import {
   CheckCircle2,
   Calendar,
   Users,
-  Award,
+  BookOpen,
   Share2,
 } from "lucide-react";
 
+/**
+ * A simple formatter to handle **bold** and *italic* text.
+ * Line breaks are handled by the parent's 'whitespace-pre-line' class.
+ */
+const FormattedText: React.FC<{ text: string }> = ({ text }) => {
+  const parts = text.split(/(\*\*.*?\*\*|\*.*?\*)/g);
+  return (
+    <>
+      {parts.map((part, i) => {
+        if (part.startsWith("**") && part.endsWith("**")) {
+          return (
+            <strong key={i} className="font-bold text-gray-900">
+              {part.slice(2, -2)}
+            </strong>
+          );
+        }
+        if (part.startsWith("*") && part.endsWith("*")) {
+          return (
+            <em key={i} className="italic">
+              {part.slice(1, -1)}
+            </em>
+          );
+        }
+        return part;
+      })}
+    </>
+  );
+};
+
 const BibtexHighlighter: React.FC<{ code: string }> = ({ code }) => {
-  // Simple regex-based highlighting for BibTeX format
   const lines = code.split("\n");
 
   return (
-    <pre className="relative p-8 bg-[#0d1117] text-[#c9d1d9] rounded-[2.2rem] overflow-x-auto text-sm leading-relaxed font-mono shadow-2xl border border-gray-800">
+    <pre className="relative p-8 bg-[#0d1117] text-[#c9d1d9] rounded-[2.2rem] overflow-x-auto text-[10px] leading-relaxed font-mono shadow-2xl border border-gray-800">
       <code>
         {lines.map((line, idx) => {
-          // Identify the components of a BibTeX line
-          // 1. @type
           if (line.trim().startsWith("@")) {
             const typeMatch = line.match(/^(@\w+)\{(.*),/);
             if (typeMatch) {
@@ -40,7 +66,6 @@ const BibtexHighlighter: React.FC<{ code: string }> = ({ code }) => {
             }
           }
 
-          // 2. field = {value}
           const fieldMatch = line.match(/^(\s*)(\w+)(\s*=\s*)\{(.*)\}(,?)/);
           if (fieldMatch) {
             return (
@@ -56,7 +81,6 @@ const BibtexHighlighter: React.FC<{ code: string }> = ({ code }) => {
             );
           }
 
-          // 3. field = value (numeric/unbraced)
           const numericMatch = line.match(/^(\s*)(\w+)(\s*=\s*)([^,{}]+)(,?)/);
           if (numericMatch) {
             return (
@@ -70,7 +94,6 @@ const BibtexHighlighter: React.FC<{ code: string }> = ({ code }) => {
             );
           }
 
-          // 4. Closing brace
           if (line.trim() === "}") {
             return (
               <div key={idx} className="text-gray-400">
@@ -113,6 +136,8 @@ const PublicationDetail: React.FC = () => {
     );
   }
 
+  const isWIP = pub.status === PublicationStatus.WORK_IN_PROGRESS;
+
   const handleCopyBibtex = () => {
     navigator.clipboard.writeText(pub.bibtex);
     setCopied(true);
@@ -130,10 +155,12 @@ const PublicationDetail: React.FC = () => {
 
   return (
     <div className="relative">
-      <motion.div
-        className="fixed top-16 left-0 right-0 h-1 bg-white origin-left z-50"
-        style={{ scaleX }}
-      />
+      <div className="fixed top-16 left-0 right-0 h-1 bg-gray-900/5 z-50">
+        <motion.div
+          className="h-full bg-white shadow-[0_0_10px_rgba(255,255,255,0.8)] origin-left"
+          style={{ scaleX }}
+        />
+      </div>
 
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -157,37 +184,103 @@ const PublicationDetail: React.FC = () => {
           </button>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-16">
           <div className="lg:col-span-2">
-            <header className="mb-16">
+            <header className="mb-12 lg:mb-16">
               <div className="inline-block px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-[10px] font-black uppercase tracking-widest mb-6 border border-blue-100">
                 {pub.status}
               </div>
-              <h1 className="text-4xl md:text-4xl font-extrabold text-gray-900 tracking-tight leading-[1.1]">
+              <h1 className="text-xl md:text-2xl font-extrabold text-gray-900 tracking-tight leading-tight">
                 {pub.title}
               </h1>
               {pub.subtitle && (
-                <p className="text-2xl text-gray-400 mt-4 font-light italic">
+                <p className="text-lg text-gray-400 mt-4 font-light italic">
                   {pub.subtitle}
                 </p>
               )}
             </header>
 
-            <section className="mb-16">
+            <section className="mb-12 lg:mb-16">
               <h2 className="text-[10px] font-black uppercase tracking-[0.2em] text-blue-600 mb-8 flex items-center">
                 <span className="w-8 h-px bg-blue-200 mr-4"></span>
                 Abstract
               </h2>
-              <p className="text-xl md:text-base text-gray-600 leading-relaxed font-light">
-                {pub.abstract}
+              <p className="text-base text-gray-600 leading-relaxed font-light whitespace-pre-line">
+                <FormattedText text={pub.abstract} />
               </p>
             </section>
 
-            <section className="mb-16">
+            {pub.jelCodes && pub.jelCodes.length > 0 && (
+              <section className="mb-12 lg:mb-16">
+                <h2 className="text-[10px] font-black uppercase tracking-[0.2em] text-blue-600 mb-6 flex items-center">
+                  <span className="w-8 h-px bg-blue-200 mr-4"></span>
+                  JEL Classification
+                </h2>
+                <div className="flex flex-wrap gap-2">
+                  {pub.jelCodes.map((code) => (
+                    <span
+                      key={code}
+                      className="px-3 py-1 bg-gray-50 border border-gray-100 rounded-lg text-xs font-medium text-gray-500 tracking-wider uppercase"
+                    >
+                      {code}
+                    </span>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {!isWIP && pub.highlights && pub.highlights.length > 0 && (
+              <section className="mb-12 lg:mb-16">
+                <h2 className="text-[10px] font-black uppercase tracking-[0.2em] text-blue-600 mb-8 flex items-center">
+                  <span className="w-8 h-px bg-blue-200 mr-4"></span>
+                  Contributions
+                </h2>
+                <ul className="space-y-4">
+                  {pub.highlights.map((highlight, idx) => (
+                    <li key={idx} className="flex items-start gap-4">
+                      <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-500 shrink-0" />
+                      <p className="text-base text-gray-600 font-light leading-relaxed whitespace-pre-line">
+                        <FormattedText text={highlight} />
+                      </p>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            )}
+
+            {!isWIP && pub.resultsFigureUrl && (
+              <section className="mb-12 lg:mb-16">
+                <h2 className="text-[10px] font-black uppercase tracking-[0.2em] text-blue-600 mb-8 flex items-center">
+                  <span className="w-8 h-px bg-blue-200 mr-4"></span>
+                  Selected Results
+                </h2>
+                <div className="space-y-6">
+                  {pub.resultsFigureTitle && (
+                    <h4 className="text-sm font-bold text-gray-900 tracking-tight text-left">
+                      {pub.resultsFigureTitle}
+                    </h4>
+                  )}
+                  <div className="rounded-[2.2rem] overflow-hidden border border-gray-100 shadow-xl shadow-gray-100/30">
+                    <img
+                      src={pub.resultsFigureUrl}
+                      alt={pub.resultsFigureTitle || "Results Figure"}
+                      className="w-full h-auto object-cover"
+                    />
+                  </div>
+                  {pub.resultsFigureExplanation && (
+                    <p className="text-base text-gray-600 leading-relaxed font-light whitespace-pre-line">
+                      <FormattedText text={pub.resultsFigureExplanation} />
+                    </p>
+                  )}
+                </div>
+              </section>
+            )}
+
+            <section className="mb-12 lg:mb-16">
               <div className="flex items-center justify-between mb-8">
-                <h2 className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-400 flex items-center">
-                  <span className="w-8 h-px bg-gray-200 mr-4"></span>
-                  BibTeX
+                <h2 className="text-[10px] font-black uppercase tracking-[0.2em] text-blue-600 flex items-center">
+                  <span className="w-8 h-px bg-blue-200 mr-4"></span>
+                  BibTeX Citation
                 </h2>
                 <button
                   onClick={handleCopyBibtex}
@@ -211,23 +304,49 @@ const PublicationDetail: React.FC = () => {
           <aside className="lg:col-span-1">
             <div className="sticky top-32 space-y-10">
               <div className="p-10 bg-white border border-gray-100 rounded-[3rem] shadow-xl shadow-gray-100/50 space-y-8">
-                <h3 className="text-sm font-black text-gray-900 uppercase tracking-widest border-b border-gray-100 pb-4">
+                <h3 className="text-sm text-blue-600 font-bold uppercase tracking-widest border-b border-gray-100 pb-4">
                   About
                 </h3>
 
-                <div className="space-y-6">
+                <div className="space-y-6 font-light">
                   <div className="flex items-start gap-4">
                     <div className="w-10 h-10 rounded-2xl bg-gray-50 flex items-center justify-center shrink-0">
                       <Users className="w-5 h-5 text-gray-400" />
                     </div>
-                    <div>
-                      <div className="text-[10px] font-black text-gray-400 uppercase tracking-wider">
+                    <div className="flex-1 min-w-0">
+                      <div className="text-[10px] text-gray-400 uppercase tracking-wider mb-2">
                         Authors
                       </div>
-                      <div className="text-sm text-gray-900 font-bold mt-1">
-                        {pub.authors.map((author, index) => (
-                          <div key={index}>{author}</div>
-                        ))}
+                      <div className="text-sm text-gray-900 space-y-1">
+                        {pub.authors.map((author, index) => {
+                          const isAlex = author.name === "Alexander Vickery";
+                          const baseColor = isAlex
+                            ? "text-blue-600"
+                            : "text-gray-900";
+                          const hoverColor = isAlex
+                            ? "hover:text-blue-400"
+                            : "hover:text-blue-600";
+
+                          return (
+                            <div key={index} className="flex items-center">
+                              {author.url ? (
+                                <a
+                                  href={author.url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className={`${baseColor} ${hoverColor} transition-colors duration-200 no-underline`}
+                                >
+                                  {author.name}
+                                </a>
+                              ) : (
+                                <span className={baseColor}>{author.name}</span>
+                              )}
+                              <span className="text-gray-900">
+                                {index < pub.authors.length - 1 ? "," : "."}
+                              </span>
+                            </div>
+                          );
+                        })}
                       </div>
                     </div>
                   </div>
@@ -237,10 +356,10 @@ const PublicationDetail: React.FC = () => {
                       <Calendar className="w-5 h-5 text-gray-400" />
                     </div>
                     <div>
-                      <div className="text-[10px] font-black text-gray-400 uppercase tracking-wider">
+                      <div className="text-[10px] text-gray-400 uppercase tracking-wider">
                         Year
                       </div>
-                      <div className="text-sm text-gray-900 font-bold mt-1">
+                      <div className="text-sm text-gray-900 mt-1">
                         {pub.year}
                       </div>
                     </div>
@@ -249,13 +368,13 @@ const PublicationDetail: React.FC = () => {
                   {pub.journal && (
                     <div className="flex items-start gap-4">
                       <div className="w-10 h-10 rounded-2xl bg-blue-50 flex items-center justify-center shrink-0">
-                        <Award className="w-5 h-5 text-blue-500" />
+                        <BookOpen className="w-5 h-5 text-blue-500" />
                       </div>
                       <div>
-                        <div className="text-[10px] font-black text-blue-600 uppercase tracking-wider">
+                        <div className="text-[10px] text-blue-600 uppercase tracking-wider">
                           Journal
                         </div>
-                        <div className="text-sm text-gray-900 font-bold mt-1 italic">
+                        <div className="text-sm text-gray-900 mt-1 italic">
                           {pub.journal}
                         </div>
                       </div>
