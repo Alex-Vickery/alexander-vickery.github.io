@@ -134,15 +134,15 @@ const PublicationsList: React.FC = () => {
                       <p className="mt-4 text-gray-600 line-clamp-2 text-sm font-medium leading-relaxed">
                         {pub.abstract}
                       </p>
-                      <div className="mt-6 flex flex-wrap items-start gap-4 text-sm font-medium text-gray-900 leading-relaxed">
+                      <div className="mt-6 text-sm font-medium text-gray-900 leading-relaxed">
                         <span className="text-gray-900">
                           {pub.authors.join(", ")}
                         </span>
-                        <span>•</span>
+                        <span className="mx-2 opacity-50">•</span>
                         <span>{pub.year}</span>
                         {pub.journal && (
                           <>
-                            <span>•</span>
+                            <span className="mx-2 opacity-50">•</span>
                             <span className="italic">{pub.journal}</span>
                           </>
                         )}
