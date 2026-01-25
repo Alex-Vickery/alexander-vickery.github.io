@@ -27,8 +27,7 @@ const Home: React.FC = () => {
                   className="text-xl md:text-2xl text-gray-600 leading-relaxed font-light"
                 >
                   I am a competition economist specialising in antitrust &
-                  damages quantification, and (as of 26/01/2026) Director,
-                  Disputes & Economics at{" "}
+                  damages quantification, and Director, Disputes & Economics at{" "}
                   <span className="text-gray-900 font-semibold">Ankura</span>.
                 </motion.p>
 
