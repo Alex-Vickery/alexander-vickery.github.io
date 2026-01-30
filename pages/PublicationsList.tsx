@@ -90,7 +90,7 @@ const PublicationsList: React.FC = () => {
             transition={{ delay: 0.1 }}
             className="mt-6 text-xl text-gray-500 w-full max-w-none font-light leading-relaxed"
           >
-            A collection of my peer-reviewed publications and ongoing research
+            A collection of my peer-reviewed publications and research
             initiatives.
           </motion.p>
         </header>
