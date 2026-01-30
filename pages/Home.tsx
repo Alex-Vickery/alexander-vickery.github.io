@@ -37,8 +37,8 @@ const Home: React.FC = () => {
                   transition={{ delay: 0.3 }}
                   className="text-base lg:text-lg text-gray-500 leading-relaxed border-l-2 border-gray-100 pl-6 lg:pl-8 font-light italic"
                 >
-                  Former British Academy Postdoctoral Fellow and Honourary
-                  Research Associate at Royal Holloway, University of London.
+                  Former British Academy Postdoctoral Fellow at Royal Holloway,
+                  University of London.
                 </motion.p>
 
                 <motion.div
