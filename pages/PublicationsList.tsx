@@ -108,7 +108,7 @@ const PublicationsList: React.FC = () => {
               className={`px-6 py-2.5 rounded-xl text-sm font-bold transition-all ${
                 filter === cat
                   ? "bg-gray-900 text-white shadow-xl shadow-gray-200 ring-2 ring-gray-900/5"
-                  : "bg-white text-gray-400 border border-gray-100 hover:border-gray-300 hover:text-gray-900"
+                  : "bg-white text-gray-400 border border-gray-200 hover:border-gray-300 hover:text-gray-900"
               }`}
             >
               {cat}
@@ -134,7 +134,7 @@ const PublicationsList: React.FC = () => {
                 className="will-change-transform"
               >
                 <Link to={`/publication/${pub.id}`} className="block group">
-                  <div className="p-5 sm:p-7 md:p-10 bg-white border border-gray-100 rounded-[2.5rem] hover:border-gray-200 hover:shadow-[0_20px_50px_rgba(0,0,0,0.04)] transition-all duration-500 relative overflow-hidden">
+                  <div className="p-5 sm:p-7 md:p-10 bg-white border border-gray-200 rounded-[2.5rem] hover:border-gray-300 hover:shadow-[0_20px_50px_rgba(0,0,0,0.04)] transition-all duration-500 relative overflow-hidden">
                     <div className="flex flex-col md:flex-row md:items-start justify-between gap-8">
                       <div className="flex-1">
                         <div className="mb-4 md:mb-6 flex items-center justify-between md:justify-start">

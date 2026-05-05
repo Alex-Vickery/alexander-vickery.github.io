@@ -70,7 +70,7 @@ const Home: React.FC = () => {
           </div>
 
           <motion.div
-            className="flex-1 flex justify-center lg:justify-end items-center"
+            className="flex-1 flex justify-center items-center"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
