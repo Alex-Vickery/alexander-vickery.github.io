@@ -82,7 +82,7 @@ const PublicationsList: React.FC = () => {
             animate={{ opacity: 1, x: 0 }}
             className="text-5xl md:text-6xl font-extrabold text-gray-900 tracking-tight"
           >
-            Research
+            Publications
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, x: -20 }}
