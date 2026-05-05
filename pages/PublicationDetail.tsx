@@ -343,7 +343,7 @@ const PublicationDetail: React.FC = () => {
           </div>
 
           <aside className="lg:col-span-1">
-            <div className="sticky top-32 space-y-6 lg:space-y-10">
+            <div className="space-y-6 lg:space-y-10">
               <div className="p-5 sm:p-7 md:p-8 lg:p-10 bg-white border border-gray-100 rounded-[3rem] shadow-xl shadow-gray-100/50 space-y-6 lg:space-y-8">
                 <h3 className="text-sm text-blue-600 font-bold uppercase tracking-widest border-b border-gray-100 pb-4">
                   About
