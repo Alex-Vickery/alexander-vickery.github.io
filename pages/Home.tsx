@@ -37,7 +37,7 @@ const Home: React.FC = () => {
                   transition={{ delay: 0.3 }}
                   className="text-base lg:text-lg text-gray-500 leading-relaxed border-l-2 border-gray-100 pl-6 lg:pl-8 font-light italic"
                 >
-                  I earned my PhD from Royal Holloway, University of London in
+                  I earned my PhD from Royal Holloway University of London in
                   2021, and am a former British Academy Postdoctoral Fellow.
                 </motion.p>
 
@@ -51,7 +51,7 @@ const Home: React.FC = () => {
                     to="/publications"
                     className="group w-full sm:w-auto text-center inline-flex items-center justify-center px-8 py-4 bg-gray-900 text-white font-bold rounded-2xl hover:bg-black transition-all shadow-xl shadow-gray-100 hover:shadow-gray-200 hover:-translate-y-1 active:translate-y-0"
                   >
-                    My Publications
+                    Publications
                     <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </Link>
 
