@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { motion, useScroll, useSpring } from "framer-motion";
 import { publications } from "../data/publications";
@@ -121,6 +121,47 @@ const PublicationDetail: React.FC = () => {
   });
 
   const pub = publications.find((p) => p.id === id);
+
+  useEffect(() => {
+    if (!pub) return;
+
+    const description =
+      pub.abstract.slice(0, 200) + (pub.abstract.length > 200 ? "…" : "");
+    const fullTitle = `${pub.title} | Alexander Vickery`;
+
+    const setMeta = (attr: string, key: string, value: string) => {
+      let el = document.querySelector<HTMLMetaElement>(
+        `meta[${attr}="${key}"]`
+      );
+      if (!el) {
+        el = document.createElement("meta");
+        el.setAttribute(attr, key);
+        document.head.appendChild(el);
+      }
+      el.content = value;
+    };
+
+    document.title = fullTitle;
+    setMeta("property", "og:title", pub.title);
+    setMeta("property", "og:description", description);
+    setMeta("property", "og:url", window.location.href);
+    setMeta("name", "description", description);
+    setMeta("name", "twitter:title", pub.title);
+    setMeta("name", "twitter:description", description);
+
+    return () => {
+      const defaultTitle = "Alexander Vickery | Personal Site";
+      const defaultDesc =
+        "Competition economist specialising in antitrust & damages quantification. Director, Disputes & Economics at Ankura.";
+      document.title = defaultTitle;
+      setMeta("property", "og:title", defaultTitle);
+      setMeta("property", "og:description", defaultDesc);
+      setMeta("property", "og:url", "https://www.alexander-vickery.com");
+      setMeta("name", "description", defaultDesc);
+      setMeta("name", "twitter:title", defaultTitle);
+      setMeta("name", "twitter:description", defaultDesc);
+    };
+  }, [pub]);
 
   if (!pub) {
     return (

@@ -5,7 +5,7 @@ import { ArrowRight, Download } from "lucide-react";
 
 const Home: React.FC = () => {
   return (
-    <div className="relative w-full min-h-[calc(100vh-64px)] lg:h-[calc(100vh-64px)] flex items-center justify-center lg:overflow-hidden bg-white">
+    <div className="relative w-full min-h-[calc(100dvh-64px)] lg:h-[calc(100vh-134px)] flex items-center justify-center lg:overflow-hidden bg-white">
       <div className="max-w-6xl mx-auto px-6 py-12 lg:py-0 w-full relative z-10">
         <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-12 lg:gap-24">
           <div className="flex-1 text-center lg:text-left">

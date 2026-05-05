@@ -9,6 +9,15 @@ import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import PublicationsList from "./pages/PublicationsList";
 import PublicationDetail from "./pages/PublicationDetail";
+import NotFound from "./pages/NotFound";
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+};
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -54,6 +63,19 @@ const AnimatedRoutes = () => {
         </motion.div>
       ),
     },
+    {
+      path: "*",
+      element: (
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.3 }}
+        >
+          <NotFound />
+        </motion.div>
+      ),
+    },
   ]);
 
   // 2. Clone the element to inject the key for AnimatePresence
@@ -70,6 +92,7 @@ const AnimatedRoutes = () => {
 const App: React.FC = () => {
   return (
     <Router>
+      <ScrollToTop />
       <Layout>
         <AnimatedRoutes />
       </Layout>
