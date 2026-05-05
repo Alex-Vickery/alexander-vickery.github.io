@@ -15,10 +15,10 @@ const NotFound: React.FC = () => {
         <p className="text-[10px] font-black uppercase tracking-widest text-gray-300 mb-2">
           Error
         </p>
-        <div className="text-[11rem] md:text-[16rem] font-extrabold text-gray-100 tracking-tighter leading-none select-none">
+        <div className="text-[5rem] sm:text-[7rem] md:text-[11rem] lg:text-[14rem] font-extrabold text-gray-100 tracking-tighter leading-none select-none">
           404
         </div>
-        <h1 className="text-2xl md:text-3xl font-extrabold text-gray-900 tracking-tight -mt-4 mb-4">
+        <h1 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-gray-900 tracking-tight -mt-2 md:-mt-4 mb-4">
           Page not found
         </h1>
         <p className="text-base text-gray-500 font-light mb-10 max-w-sm mx-auto leading-relaxed">

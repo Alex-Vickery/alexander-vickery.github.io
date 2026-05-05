@@ -208,7 +208,7 @@ const PublicationDetail: React.FC = () => {
         animate={{ opacity: 1, y: 0 }}
         className="max-w-5xl mx-auto px-6 py-12 md:py-20"
       >
-        <div className="flex justify-between items-center mb-12">
+        <div className="flex justify-between items-center mb-8 md:mb-12">
           <button
             onClick={() => navigate(-1)}
             className="inline-flex items-center text-gray-500 hover:text-gray-900 font-bold text-xs uppercase tracking-widest group transition-colors"
@@ -227,7 +227,7 @@ const PublicationDetail: React.FC = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-16">
           <div className="lg:col-span-2">
-            <header className="mb-12 lg:mb-16">
+            <header className="mb-8 md:mb-12 lg:mb-16">
               <div className="inline-block px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-[10px] font-black uppercase tracking-widest mb-6 border border-blue-100">
                 {pub.status}
               </div>
@@ -241,7 +241,7 @@ const PublicationDetail: React.FC = () => {
               )}
             </header>
 
-            <section className="mb-12 lg:mb-16">
+            <section className="mb-8 md:mb-12 lg:mb-16">
               <h2 className="text-[10px] font-black uppercase tracking-[0.2em] text-blue-600 mb-8 flex items-center">
                 <span className="w-8 h-px bg-blue-200 mr-4"></span>
                 Abstract
@@ -252,7 +252,7 @@ const PublicationDetail: React.FC = () => {
             </section>
 
             {pub.jelCodes && pub.jelCodes.length > 0 && (
-              <section className="mb-12 lg:mb-16">
+              <section className="mb-8 md:mb-12 lg:mb-16">
                 <h2 className="text-[10px] font-black uppercase tracking-[0.2em] text-blue-600 mb-6 flex items-center">
                   <span className="w-8 h-px bg-blue-200 mr-4"></span>
                   JEL Classification
@@ -271,7 +271,7 @@ const PublicationDetail: React.FC = () => {
             )}
 
             {!isWIP && pub.highlights && pub.highlights.length > 0 && (
-              <section className="mb-12 lg:mb-16">
+              <section className="mb-8 md:mb-12 lg:mb-16">
                 <h2 className="text-[10px] font-black uppercase tracking-[0.2em] text-blue-600 mb-8 flex items-center">
                   <span className="w-8 h-px bg-blue-200 mr-4"></span>
                   Contributions
@@ -290,7 +290,7 @@ const PublicationDetail: React.FC = () => {
             )}
 
             {!isWIP && pub.resultsFigureUrl && (
-              <section className="mb-12 lg:mb-16">
+              <section className="mb-8 md:mb-12 lg:mb-16">
                 <h2 className="text-[10px] font-black uppercase tracking-[0.2em] text-blue-600 mb-8 flex items-center">
                   <span className="w-8 h-px bg-blue-200 mr-4"></span>
                   Selected Results
@@ -317,7 +317,7 @@ const PublicationDetail: React.FC = () => {
               </section>
             )}
 
-            <section className="mb-12 lg:mb-16">
+            <section className="mb-8 md:mb-12 lg:mb-16">
               <div className="flex items-center justify-between mb-8">
                 <h2 className="text-[10px] font-black uppercase tracking-[0.2em] text-blue-600 flex items-center">
                   <span className="w-8 h-px bg-blue-200 mr-4"></span>
@@ -343,8 +343,8 @@ const PublicationDetail: React.FC = () => {
           </div>
 
           <aside className="lg:col-span-1">
-            <div className="sticky top-32 space-y-10">
-              <div className="p-10 bg-white border border-gray-100 rounded-[3rem] shadow-xl shadow-gray-100/50 space-y-8">
+            <div className="sticky top-32 space-y-6 lg:space-y-10">
+              <div className="p-5 sm:p-7 md:p-8 lg:p-10 bg-white border border-gray-100 rounded-[3rem] shadow-xl shadow-gray-100/50 space-y-6 lg:space-y-8">
                 <h3 className="text-sm text-blue-600 font-bold uppercase tracking-widest border-b border-gray-100 pb-4">
                   About
                 </h3>

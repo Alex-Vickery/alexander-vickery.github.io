@@ -75,8 +75,8 @@ const PublicationsList: React.FC = () => {
         />
       </div>
 
-      <div className="max-w-5xl mx-auto px-6 py-16">
-        <header className="mb-12">
+      <div className="max-w-5xl mx-auto px-6 py-10 md:py-16">
+        <header className="mb-8 md:mb-12">
           <motion.h1
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -100,7 +100,7 @@ const PublicationsList: React.FC = () => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="flex flex-wrap justify-center lg:justify-start gap-3 mb-16"
+          className="flex flex-wrap justify-center lg:justify-start gap-3 mb-10 md:mb-16"
         >
           {categories.map((cat) => (
             <button
@@ -118,7 +118,7 @@ const PublicationsList: React.FC = () => {
         </motion.div>
 
         <motion.div
-          className="grid gap-8"
+          className="grid gap-5 md:gap-8"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
@@ -135,10 +135,10 @@ const PublicationsList: React.FC = () => {
                 className="will-change-transform"
               >
                 <Link to={`/publication/${pub.id}`} className="block group">
-                  <div className="p-8 md:p-10 bg-white border border-gray-100 rounded-[2.5rem] hover:border-gray-200 hover:shadow-[0_20px_50px_rgba(0,0,0,0.04)] transition-all duration-500 relative overflow-hidden">
+                  <div className="p-5 sm:p-7 md:p-10 bg-white border border-gray-100 rounded-[2.5rem] hover:border-gray-200 hover:shadow-[0_20px_50px_rgba(0,0,0,0.04)] transition-all duration-500 relative overflow-hidden">
                     <div className="flex flex-col md:flex-row md:items-start justify-between gap-8">
                       <div className="flex-1">
-                        <div className="mb-6 flex items-center justify-between md:justify-start">
+                        <div className="mb-4 md:mb-6 flex items-center justify-between md:justify-start">
                           <StatusBadge status={pub.status} />
                           <div className="md:hidden">
                             <ArrowRight className="w-5 h-5 text-gray-300 group-hover:text-gray-900 transition-colors" />
@@ -155,7 +155,7 @@ const PublicationsList: React.FC = () => {
                           </p>
                         )}
 
-                        <div className="mt-6">
+                        <div className="mt-4 md:mt-6">
                           <div className="text-[10px] font-black uppercase tracking-[0.2em] text-blue-600 mb-3 flex items-center">
                             <span className="w-4 h-px bg-blue-200 mr-2"></span>
                             Abstract
@@ -165,7 +165,7 @@ const PublicationsList: React.FC = () => {
                           </p>
                         </div>
 
-                        <div className="mt-6">
+                        <div className="mt-4 md:mt-6">
                           <div className="text-[10px] font-black uppercase tracking-[0.2em] text-blue-600 mb-3 flex items-center">
                             <span className="w-4 h-px bg-blue-200 mr-2"></span>
                             About

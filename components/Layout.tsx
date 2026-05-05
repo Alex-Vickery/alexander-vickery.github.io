@@ -84,7 +84,7 @@ const SocialLink = ({
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className={`text-gray-400 ${hoverColor} transition-all transform hover:scale-110`}
+        className={`p-2 -m-2 text-gray-400 ${hoverColor} transition-all transform hover:scale-110`}
         aria-label={label}
       >
         <Icon className="w-5 h-5" />

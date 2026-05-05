@@ -7,7 +7,7 @@ const Home: React.FC = () => {
   return (
     <div className="relative w-full min-h-[calc(100dvh-64px)] lg:h-[calc(100vh-134px)] flex items-center justify-center lg:overflow-hidden bg-white">
       <div className="max-w-6xl mx-auto px-6 py-12 lg:py-0 w-full relative z-10">
-        <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-12 lg:gap-24">
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-10 lg:gap-20">
           <div className="flex-1 text-center lg:text-left">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -75,22 +75,17 @@ const Home: React.FC = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
           >
-            <div className="relative">
-              {/* Responsive container for the image - max height prevents scrolling on shorter screens */}
-              <div className="relative h-64 md:h-[400px] lg:h-auto lg:max-h-[55vh] flex items-center justify-center">
-                <div className="p-4 h-full">
-                  <img
-                    src="/assets/home/AV_45_comp.jpg"
-                    alt="Alexander Vickery"
-                    loading="eager"
-                    className="h-full w-auto max-h-full object-contain rounded-[2.5rem] lg:rounded-[3.2rem] transition-all duration-700 shadow-2xl shadow-gray-200"
-                    style={{
-                      WebkitBackfaceVisibility: "hidden",
-                      transform: "translateZ(0)",
-                    }}
-                  />
-                </div>
-              </div>
+            <div className="p-2">
+              <img
+                src="/assets/home/AV_45_comp.jpg"
+                alt="Alexander Vickery"
+                loading="eager"
+                className="home-image block h-64 md:h-[340px] lg:h-auto lg:max-h-[52vh] w-auto object-contain rounded-[2.5rem] lg:rounded-[3.2rem] transition-all duration-700 shadow-2xl shadow-gray-200"
+                style={{
+                  WebkitBackfaceVisibility: "hidden",
+                  transform: "translateZ(0)",
+                }}
+              />
             </div>
           </motion.div>
         </div>

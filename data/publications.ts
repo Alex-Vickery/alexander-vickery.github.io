@@ -156,7 +156,8 @@ export const publications: Publication[] = [
       { name: "Alexander Vickery", url: "https://www.alexander-vickery.com" },
     ],
     status: PublicationStatus.WORKING_PAPER,
-    journal: "IFS Working Paper, CESifo Working Paper",
+    journal:
+      "Revise & Resubmit at the Journal of the European Economic Association",
     year: "2025",
     abstract:
       "We use a dynamic latent factor model to study how exposure to intimate partner violence (IPV) affects young children's accumulation of cognitive and socio-emotional skills. The model allows for both a direct effect of exposure as well as indirect effects via changes in parental investments and mother's mental health. IPV has adverse effects on both skills, with more immediate and larger effects for socio-emotional skills and with the skill deficits growing in exposure duration. The indirect effects dominate for both skills. Early interventions that support parental investment and mother's mental health have potential for offsetting the adverse IPV-effects but only if subsequent IPV exposure is eliminated.",
