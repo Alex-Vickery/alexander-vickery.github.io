@@ -14,7 +14,7 @@ const Home: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             >
-              <h1 className="text-6xl md:text-7xl lg:text-8xl font-extrabold text-gray-900 tracking-tighter leading-[0.85] mb-8 lg:mb-10">
+              <h1 className="home-heading text-6xl md:text-7xl lg:text-8xl font-extrabold text-gray-900 tracking-tighter leading-[0.85] mb-8 lg:mb-10">
                 Alexander <br />
                 Vickery
               </h1>
@@ -45,7 +45,7 @@ const Home: React.FC = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.4 }}
-                  className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4 lg:pt-8"
+                  className="home-button-section flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4 lg:pt-8"
                 >
                   <Link
                     to="/publications"

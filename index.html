@@ -41,6 +41,18 @@
         background-color: #dbeafe;
         color: #1e40af;
       }
+
+      /* Scale down homepage content on short desktop screens (e.g. ThinkPad, 125%-scaled 1080p) */
+      @media (min-width: 1024px) and (max-height: 780px) {
+        .home-heading {
+          font-size: 4.5rem !important; /* text-7xl instead of text-8xl */
+          line-height: 0.85 !important;
+          margin-bottom: 1rem !important;
+        }
+        .home-button-section {
+          padding-top: 0.5rem !important;
+        }
+      }
     </style>
     <script type="importmap">
       {
